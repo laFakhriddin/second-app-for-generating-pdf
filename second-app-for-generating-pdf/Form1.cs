@@ -83,11 +83,6 @@ namespace app_pdf
                 PdfPCell row12 = new PdfPCell(new Phrase("  ", f_15_normal));
                 PdfPCell cel13 = new PdfPCell(new Phrase("Telefon (71) 299-02-98", f_15_bold));
                 PdfPCell row13 = new PdfPCell(new Phrase("             O\'quv ishlari bo\'yicha prorektor                               " + textBox28.Text, f_15_bold));
-
-
-                
-
-
                 PdfPCell cel14 = new PdfPCell(new Phrase("  ", f_15_bold));
                 PdfPCell row14 = new PdfPCell(new Phrase("             2-Bo\'lim boshlig\'i                                                     Sh.T.Shoxidayeva", f_15_bold));
 
@@ -196,7 +191,7 @@ namespace app_pdf
 
                 table1.AddCell(cel14);
                 table1.AddCell(row14);
-                
+
 
                 table1.AddCell(acel11);
                 table1.AddCell(arow11);
@@ -204,7 +199,7 @@ namespace app_pdf
                 table1.AddCell(acel1);
                 table1.AddCell(arow1);
 
-                table1.SpacingBefore = 35;
+                table1.SpacingBefore = 25;
                 doc.Add(table1);
 
                 // second table
@@ -246,7 +241,9 @@ namespace app_pdf
                 PdfPCell cel122 = new PdfPCell(new Phrase("“" + textBox18.Text[0] + textBox18.Text[1] + "”-" + textBox18.Text[3] + textBox18.Text[4] + "-" + textBox18.Text[6] + textBox18.Text[7] + textBox18.Text[8] + textBox18.Text[9] + " ", f_15_bold));
                 PdfPCell row122 = new PdfPCell(new Phrase("  ", f_15_normal));
                 PdfPCell cel123 = new PdfPCell(new Phrase("Telefon (71) 299-02-98", f_15_bold));
-                PdfPCell row123 = new PdfPCell(new Phrase("M.O`.                              Rektor                          O.K.Abduraxmanov", f_15_bold));
+                PdfPCell row123 = new PdfPCell(new Phrase("             O\'quv ishlari bo\'yicha prorektor                               " + textBox28.Text, f_15_bold));
+                PdfPCell cel124 = new PdfPCell(new Phrase("  ", f_15_bold));
+                PdfPCell row124 = new PdfPCell(new Phrase("             2-Bo\'lim boshlig\'i                                                     Sh.T.Shoxidayeva", f_15_bold));
 
                 cel112.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 cel22.Border = iTextSharp.text.Rectangle.NO_BORDER;
@@ -261,6 +258,7 @@ namespace app_pdf
                 cel121.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 cel122.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 cel123.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                cel124.Border = iTextSharp.text.Rectangle.NO_BORDER;
 
                 acel2.Border = iTextSharp.text.Rectangle.BOTTOM_BORDER;
                 acel22.Border = iTextSharp.text.Rectangle.NO_BORDER;
@@ -278,6 +276,7 @@ namespace app_pdf
                 row121.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 row122.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 row123.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                row124.Border = iTextSharp.text.Rectangle.NO_BORDER;
 
                 arow2.Border = iTextSharp.text.Rectangle.BOTTOM_BORDER;
                 arow22.Border = iTextSharp.text.Rectangle.NO_BORDER;
@@ -295,6 +294,7 @@ namespace app_pdf
                 cel121.HorizontalAlignment = Element.ALIGN_CENTER;
                 cel122.HorizontalAlignment = Element.ALIGN_CENTER;
                 cel123.HorizontalAlignment = Element.ALIGN_CENTER;
+                cel124.HorizontalAlignment = Element.ALIGN_CENTER;
 
                 acel2.HorizontalAlignment = Element.ALIGN_CENTER;
                 acel22.HorizontalAlignment = Element.ALIGN_CENTER;
@@ -312,6 +312,7 @@ namespace app_pdf
                 row121.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
                 row122.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
                 row123.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
+                row124.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
 
                 arow2.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
                 arow22.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
@@ -347,6 +348,9 @@ namespace app_pdf
                 table2.AddCell(cel123);
                 table2.AddCell(row122);
 
+                table2.AddCell(cel124);
+                table2.AddCell(row124);
+
                 table2.AddCell(acel22);
                 table2.AddCell(arow22);
 
@@ -354,8 +358,8 @@ namespace app_pdf
                 table2.AddCell(arow2);
 
 
-                table2.SpacingAfter = 35;
-                table2.SpacingBefore = 35;
+                table2.SpacingAfter = 20;
+                table2.SpacingBefore = 20;
                 doc.Add(table2);
 
                 // third table
@@ -397,7 +401,9 @@ namespace app_pdf
                 PdfPCell cel132 = new PdfPCell(new Phrase("“" + textBox27.Text[0] + textBox27.Text[1] + "”-" + textBox27.Text[3] + textBox27.Text[4] + "-" + textBox27.Text[6] + textBox27.Text[7] + textBox27.Text[8] + textBox27.Text[9] + " ", f_15_bold));
                 PdfPCell row132 = new PdfPCell(new Phrase("  ", f_15_normal));
                 PdfPCell cel133 = new PdfPCell(new Phrase("Telefon (71) 299-02-98", f_15_bold));
-                PdfPCell row133 = new PdfPCell(new Phrase("M.O`.                              Rektor                          O.K.Abduraxmanov", f_15_bold));
+                PdfPCell row133 = new PdfPCell(new Phrase("             O\'quv ishlari bo\'yicha prorektor                               " + textBox28.Text, f_15_bold));
+                PdfPCell cel134 = new PdfPCell(new Phrase("  ", f_15_bold));
+                PdfPCell row134 = new PdfPCell(new Phrase("             2-Bo\'lim boshlig\'i                                                     Sh.T.Shoxidayeva", f_15_bold));
 
                 cel113.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 cel23.Border = iTextSharp.text.Rectangle.NO_BORDER;
@@ -412,6 +418,7 @@ namespace app_pdf
                 cel131.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 cel132.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 cel133.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                cel134.Border = iTextSharp.text.Rectangle.NO_BORDER;
 
                 //acel3.Border = iTextSharp.text.Rectangle.BOTTOM_BORDER;
                 //acel33.Border = iTextSharp.text.Rectangle.NO_BORDER;
@@ -429,6 +436,7 @@ namespace app_pdf
                 row131.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 row132.Border = iTextSharp.text.Rectangle.NO_BORDER;
                 row133.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                row134.Border = iTextSharp.text.Rectangle.NO_BORDER;
 
                 //arow3.Border = iTextSharp.text.Rectangle.BOTTOM_BORDER;
                 //arow33.Border = iTextSharp.text.Rectangle.NO_BORDER;
@@ -446,6 +454,7 @@ namespace app_pdf
                 cel131.HorizontalAlignment = Element.ALIGN_CENTER;
                 cel132.HorizontalAlignment = Element.ALIGN_CENTER;
                 cel133.HorizontalAlignment = Element.ALIGN_CENTER;
+                cel134.HorizontalAlignment = Element.ALIGN_CENTER;
 
                 //acel3.HorizontalAlignment = Element.ALIGN_CENTER;
                 //acel33.HorizontalAlignment = Element.ALIGN_CENTER;
@@ -463,6 +472,7 @@ namespace app_pdf
                 row131.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
                 row132.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
                 row133.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
+                row134.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
 
                 //arow3.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
                 //arow33.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
@@ -498,6 +508,9 @@ namespace app_pdf
                 table3.AddCell(cel133);
                 table3.AddCell(row132);
 
+                table3.AddCell(cel134);
+                table3.AddCell(row134);
+
                 //table3.AddCell(acel33);
                 //table3.AddCell(arow33);
 
@@ -505,7 +518,7 @@ namespace app_pdf
                 //table3.AddCell(arow3);
 
 
-                table3.SpacingAfter = 35;
+                table3.SpacingAfter = 25;
                 doc.Add(table3);
 
                 doc.Close();
