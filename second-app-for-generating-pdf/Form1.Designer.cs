@@ -786,7 +786,7 @@ namespace app_pdf
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 653);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(800, 700);
+            this.MaximumSize = new System.Drawing.Size(800, 950);
             this.MinimumSize = new System.Drawing.Size(800, 700);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
